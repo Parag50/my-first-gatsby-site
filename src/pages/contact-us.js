@@ -6,7 +6,7 @@ const ContactUsPage = () => {
     <Layout pageTitle="Contact Us">
       <p>
         If you need legal assistance, don’t hesitate to reach out. You can
-        contact us by phone at (555) 123-4567 or use the form below.
+        contact us by phone at (+91) 84355-86444 or use the form below.
       </p>
       <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />

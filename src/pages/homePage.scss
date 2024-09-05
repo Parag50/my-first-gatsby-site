@@ -1,0 +1,58 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --hero-background-image: url('https://www.thefloridatriallawyer.com/wp-content/themes/thefloridatriallawyer/assets/img/backgrounds/types-of-cases-bg.webp');
+  --hero-overlay-color: rgba(0, 0, 0, 0.5);
+  --text-color: #fff;
+}
+
+.hero {
+  position: relative;
+  background-image: var(--hero-background-image);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--hero-overlay-color);
+  border-radius: 8px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 2rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

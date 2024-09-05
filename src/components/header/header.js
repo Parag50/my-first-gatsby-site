@@ -22,8 +22,9 @@ const Header = () => {
   return (
     <header className={header}>
       <div className={logo}>
-        {/* <Link to="/">Parag</Link> */}
+        <Link to="/">
         <StaticImage src="../../images/arishilogo.png" alt="Logo" />
+        </Link>
       </div>
       <nav>
         <ul className={`${navLinks} ${mobileMenuOpen ? mobileNav : ""}`}>

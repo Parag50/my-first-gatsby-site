@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./header/header";
 import "./layout.scss";
+import Footer from "./footer/footer";
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ pageTitle, children }) => {
           {children}
         </main>
       </div>
+      <Footer />
     </>
   );
 };
