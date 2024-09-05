@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <Layout pageTitle="Welcome to Our Law Firm">
       <section>
-        <h2>Experienced Lawyers, Proven Results</h2>
+        <h2>We Fight Harder For Our Clients</h2>
         <p>
           With years of experience in various fields of law, we have a proven
           track record of success. Our firm specializes in family law, personal

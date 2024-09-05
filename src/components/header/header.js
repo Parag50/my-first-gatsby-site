@@ -2,16 +2,31 @@ import React from "react";
 import { Link } from "gatsby";
 import {
   header,
+  logo,
   navLinks,
   navLinkItem,
   navLinkText,
+  menuIcon,
+  mobileNav,
 } from "./header.module.css";
+import { useState } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <header className={header}>
+      <div className={logo}>
+        {/* <Link to="/">Parag</Link> */}
+        <StaticImage src="../../images/arishilogo.png" alt="Logo" />
+      </div>
       <nav>
-        <ul className={navLinks}>
+        <ul className={`${navLinks} ${mobileMenuOpen ? mobileNav : ""}`}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
               Home
@@ -38,6 +53,11 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+        <div className={menuIcon} onClick={toggleMobileMenu}>
+          <span />
+          <span />
+          <span />
+        </div>
       </nav>
     </header>
   );

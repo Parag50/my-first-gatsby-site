@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+$primary-color: #ffffff;
+$secondary-color: #f3a712;
+$background-color: #111;
+$max-width: 1200px;
+$mobile-max-width: 100%;
+$font-family: "Poppins", sans-serif;
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $primary-color;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+a:hover {
+  color: lighten($secondary-color, 10%);
+}
+
+/* Layout Container */
+.container {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  max-width: $max-width;
+  font-family: $font-family;
+
+  @media (max-width: 768px) {
+    max-width: $mobile-max-width;
+    padding: 1rem;
+  }
+}
+
+.mainContent {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: $primary-color;
+  font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+/* Additional classes for responsive layout */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
