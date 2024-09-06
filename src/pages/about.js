@@ -6,8 +6,8 @@ const AboutPage = () => {
     <Layout pageTitle="About Our Law Firm">
       <p>
         Our law firm was founded with the mission of providing clients with
-        professional, personalized legal representation. Led by Parag Kushwah, an
-        experienced and dedicated attorney, we believe in fighting for our
+        professional, personalized legal representation. Led by Parag Kushwah,
+        an experienced and dedicated attorney, we believe in fighting for our
         clients' rights and ensuring they get the best possible outcomes.
       </p>
       <h2>Our Founder's Story</h2>
@@ -22,3 +22,5 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export const Head = () => <title>About Page</title>;

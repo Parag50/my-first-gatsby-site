@@ -6,8 +6,8 @@ const ReviewsPage = () => {
     <Layout pageTitle="Client Reviews">
       <h2>What Our Clients Say</h2>
       <blockquote>
-        "Parag Kushwah and her team were amazing. They fought for me every step of
-        the way, and I couldn't have asked for better representation. Highly
+        "Parag Kushwah and her team were amazing. They fought for me every step
+        of the way, and I couldn't have asked for better representation. Highly
         recommend!" - Sarah K.
       </blockquote>
       <blockquote>
@@ -20,3 +20,5 @@ const ReviewsPage = () => {
 };
 
 export default ReviewsPage;
+
+export const Head = () => <title>Reviews</title>;

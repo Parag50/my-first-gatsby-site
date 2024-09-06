@@ -6,6 +6,12 @@ const HomePage = () => {
   return (
     <Layout pageTitle="Welcome to Our Law Firm">
       <section className="hero">
+        <video autoPlay loop muted playsInline>
+          <source
+            src="https://web-images.credcdn.in/v2/_next/assets/videos/landing/desktop/hero-desktop.mp4?tr=q-95"
+            type="video/mp4"
+          />
+        </video>
         <div className="heroContent">
           <h2>We Fight Harder For Our Clients</h2>
           <p>
@@ -17,6 +23,7 @@ const HomePage = () => {
           </p>
         </div>
       </section>
+
       <section>
         <h2>Why Choose Us?</h2>
         <ul>
@@ -26,11 +33,12 @@ const HomePage = () => {
           <li>Compassionate and Understanding Approach</li>
         </ul>
       </section>
+
       <section>
         <h2>Contact Us Today</h2>
         <p>
-          Let us help you with your legal issues. Call us at (+91) 84355-86444 or
-          fill out our <a href="/contact-us">contact form</a> to schedule a
+          Let us help you with your legal issues. Call us at (+91) 84355-86444
+          or fill out our <a href="/contact-us">contact form</a> to schedule a
           consultation.
         </p>
       </section>

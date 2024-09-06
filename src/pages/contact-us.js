@@ -20,7 +20,7 @@ const ContactUsPage = () => {
 
       if (response.ok) {
         alert("Form submitted successfully!");
-        form.reset(); // Reset the form after successful submission
+        form.reset();
       } else {
         alert("Error submitting the form.");
       }
@@ -75,3 +75,5 @@ const ContactUsPage = () => {
 };
 
 export default ContactUsPage;
+
+export const Head = () => <title>Contact Us</title>;

@@ -24,3 +24,5 @@ const CaseResultsPage = () => {
 };
 
 export default CaseResultsPage;
+
+export const Head = () => <title>Case Results</title>;
