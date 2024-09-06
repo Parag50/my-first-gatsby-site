@@ -9,7 +9,7 @@ const Accordion = ({ title, content }) => {
   };
 
   return (
-    <div className="accordion">
+    <div className={`accordion ${isOpen ? "open" : "closed"}`}>
       <div className="accordionHeader" onClick={toggleAccordion}>
         <h3>{title}</h3>
         <span className={`icon ${isOpen ? "open" : "closed"}`}>+</span>

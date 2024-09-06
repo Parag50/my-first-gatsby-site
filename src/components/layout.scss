@@ -7,7 +7,6 @@ $max-width: auto;
 $mobile-max-width: 100%;
 $font-family: "Poppins", sans-serif;
 
-/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +29,8 @@ a:hover {
   color: lighten($secondary-color, 10%);
 }
 
-/* Layout Container */
 .container {
   margin: 0 auto;
-  padding: 2rem 1.5rem;
   max-width: $max-width;
   font-family: $font-family;
 
@@ -44,7 +41,6 @@ a:hover {
 }
 
 .mainContent {
-  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.03);
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
