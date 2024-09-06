@@ -1,10 +1,39 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import Accordion from "../components/Accordion";
 import "./homePage.scss";
 
 const HomePage = () => {
+  const offenses = [
+    {
+      title: "Drug Offenses",
+      content:
+        "We defend against various drug-related charges, including possession, trafficking, and manufacturing. Our approach involves a thorough investigation to build a strong defense strategy.",
+    },
+    {
+      title: "Theft and Burglary",
+      content:
+        "Our expertise covers theft, burglary, and larceny cases. We work to uncover evidence that supports your innocence and challenge the prosecution's case.",
+    },
+    {
+      title: "Violent Crimes",
+      content:
+        "From assault to robbery, we provide robust defense strategies for violent crime allegations. We focus on mitigating factors and disputing any incriminating evidence.",
+    },
+    {
+      title: "White-Collar Crimes",
+      content:
+        "We handle cases involving fraud, embezzlement, and other white-collar crimes. Our goal is to provide a strong defense to minimize the legal consequences.",
+    },
+    {
+      title: "Sex Crimes",
+      content:
+        "We offer confidential and compassionate defense for sex crime charges, including sexual assault and harassment. We aim to protect your rights and privacy throughout the legal process.",
+    },
+  ];
+
   return (
-    <Layout pageTitle="Welcome to Our Law Firm">
+    <Layout>
       <section className="hero">
         <video autoPlay loop muted playsInline>
           <source
@@ -24,17 +53,29 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section>
-        <h2>Why Choose Us?</h2>
-        <ul>
-          <li>Extensive Legal Knowledge</li>
-          <li>Personalized Client Focus</li>
-          <li>Strong Negotiation and Litigation Skills</li>
-          <li>Compassionate and Understanding Approach</li>
-        </ul>
+      <section className="defenseTypes">
+        <div className="defenseTypesContent">
+          <div className="typesList">
+            <h2>Types of Criminal Offenses We Defend</h2>
+            <ul>
+              {offenses.map((offense, index) => (
+                <li key={index}>{offense.title}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="accordionSection">
+            {offenses.map((offense, index) => (
+              <Accordion
+                key={index}
+                title={offense.title}
+                content={offense.content}
+              />
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section className="contact">
         <h2>Contact Us Today</h2>
         <p>
           Let us help you with your legal issues. Call us at (+91) 84355-86444
